@@ -1,0 +1,4 @@
+#ifndef HUMAN_PLAYER_HEADER
+#define HUMAN_PLAYER_HEADER
+
+#endif

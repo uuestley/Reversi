@@ -115,6 +115,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Board.cpp" />
+    <ClCompile Include="ComputerPlayer.cpp" />
+    <ClCompile Include="Game.cpp" />
+    <ClCompile Include="HumanPlayer.cpp" />
+    <ClCompile Include="Move.cpp" />
+    <ClCompile Include="NullMove.cpp" />
+    <ClCompile Include="Piece.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="RandomPlayer.cpp" />
+    <ClCompile Include="Reversi.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Board.h" />
+    <ClInclude Include="ComputerPlayer.h" />
+    <ClInclude Include="Game.h" />
+    <ClInclude Include="HumanPlayer.h" />
+    <ClInclude Include="Move.h" />
+    <ClInclude Include="NullMove.h" />
+    <ClInclude Include="Piece.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="RandomPlayer.h" />
+    <ClInclude Include="Reversi.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

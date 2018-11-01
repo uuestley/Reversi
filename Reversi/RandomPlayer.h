@@ -1,0 +1,4 @@
+#ifndef RANDOM_PLAYER_HEADER
+#define RANDOM_PLAYER_HEADER
+
+#endif
