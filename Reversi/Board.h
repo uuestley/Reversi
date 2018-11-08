@@ -15,5 +15,6 @@ public:
 	int numMoves() const;
 	Move getMove(int) const;
 
+
 };
 #endif
