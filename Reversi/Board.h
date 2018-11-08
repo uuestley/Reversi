@@ -14,7 +14,5 @@ public:
 	void genMoves() const;
 	int numMoves() const;
 	Move getMove(int) const;
-
-
 };
 #endif
