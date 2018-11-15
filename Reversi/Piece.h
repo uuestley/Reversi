@@ -1,4 +1,9 @@
 #ifndef PIECE_HEADER
 #define PIECE_HEADER
-	enum Piece{LIGHT, DARK, EMPTY};
+
+class Piece {
+	enum {LIGHT, DARK, EMPTY};
+	Piece getPiece() const;
+};
+
 #endif

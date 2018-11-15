@@ -1,10 +1,15 @@
 #ifndef PLAYER_HEADER
 #define PLAYER_HEADER
-class Player{
+#include "Piece.h"
+#include <string>
+
+class Player {
 public:
-	Player(const &string, Piece);
+	Player(const std::string&, Piece);
 	virtual ~Player();
-	getPiece() const;
+	//getPiece gets defined in Piece.h as it is using the base class Piece
+	//Piece Piece::getPiece() const;
 	virtual void makeMove(Board&) = 0;
-}
+};
+
 #endif

@@ -2,17 +2,19 @@
 #define BOARD_HEADER
 #include "Piece.h"
 #include "Move.h"
+
 class Board {
 public:
 	Board();
 	void reset();
 	void display() const;
 	void makeMove(Piece, Move);
-	bool isLegal(Piece, Move);
+	bool isLegal(Piece, Move) const;
 	Piece getWinner() const;
 	Piece getPlayer() const;
-	void genMoves() const;
+	void genMoves();
 	int numMoves() const;
 	Move getMove(int) const;
 };
+
 #endif
