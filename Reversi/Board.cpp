@@ -14,11 +14,11 @@ public:
 
 	}
 
-	void makeMove(Piece, Move) {
+	void makeMove(Piece PieceToMove, Move MoveToMake) {
 
 	}
 
-	bool isLegal(Piece, Move) const {
+	bool isLegal(Piece PieceToCheck, Move MoveToCheck) const {
 
 	}
 
@@ -38,7 +38,7 @@ public:
 
 	}
 
-	Move getMove(int) const {
+	Move getMove(int MoveToReturn) const {
 
 	}
 };

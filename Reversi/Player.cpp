@@ -3,7 +3,7 @@
 
 class Player {
 public:
-	Player(const std::string&, Piece) {
+	Player(const std::string& PlayerName, Piece PlayerPiece) {
 
 	}
 

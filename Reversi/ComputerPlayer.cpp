@@ -2,7 +2,7 @@
 
 class ComputerPlayer : public Player {
 public:
-	ComputerPlayer(Piece) {
+	ComputerPlayer(Piece PlayersPiece) {
 
 	}
 };
