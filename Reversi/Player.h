@@ -1,6 +1,7 @@
 #ifndef PLAYER_HEADER
 #define PLAYER_HEADER
 #include "Piece.h"
+#include "Board.h"
 #include <string>
 
 // Abstract base class for all human and computer players
@@ -17,7 +18,7 @@ public:
 	//Piece Piece::getPiece() const;
 
 	// Pure virtual function which makes players move their piece on the board
-	virtual void makeMove(Board&) = 0;
+	virtual void makeMove(Board&);
 };
 
 #endif
