@@ -10,7 +10,10 @@
 #include "Player.h"
 #include "RandomPlayer.h"
 
+// The tester class
 class ReversiTester {
+	// Main method creates a Game object and calls
+	// Game::selectPlayers(), Game::play(), and Game::announceWinner().
 	int main();
 };
 
