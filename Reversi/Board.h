@@ -3,13 +3,18 @@
 #include "Piece.h"
 #include "Move.h"
 
+// A standard Reversi/Othello board consists of an 8x8 grid
+#define BOARD_X 8
+#define BOARD_Y 8
+#define BOARD_AREA BOARD_X * BOARD_Y
+
 // This class represents the current state of the board.
 class Board {
 public:
 	// Default constructor that initializes the board by calling the member function reset()
 	Board();
 
-	// Erases all pieces from the board
+	// Erases all pieces from the board and sets up a standard game
 	void reset();
 
 	// Displays the board
