@@ -3,6 +3,7 @@
 #include "Piece.h"
 #include "Move.h"
 class Board {
+    int board[8*8];
 public:
 	Board();
 	void reset();
