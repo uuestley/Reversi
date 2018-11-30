@@ -58,6 +58,7 @@ public:
 
 	void makeMove(Piece PieceToMove, Move MoveToMake) {
 
+
 	}
 
 	bool isLegal(Piece PieceToCheck, Move MoveToCheck) const {
@@ -85,6 +86,6 @@ public:
 	}
 
 	Move getMove(int MoveToReturn) const {
-
+		return gameBoard[MoveToReturn];
 	}
 };
