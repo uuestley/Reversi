@@ -42,7 +42,7 @@
     <ClCompile Include="Game.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Reversi.cpp">
+    <ClCompile Include="ReversiTester.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -74,7 +74,7 @@
     <ClInclude Include="RandomPlayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Reversi.h">
+    <ClInclude Include="ReversiTester.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

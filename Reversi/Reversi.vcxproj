@@ -124,7 +124,7 @@
     <ClCompile Include="Piece.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="RandomPlayer.cpp" />
-    <ClCompile Include="Reversi.cpp" />
+    <ClCompile Include="ReversiTester.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Board.h" />
@@ -136,7 +136,7 @@
     <ClInclude Include="Piece.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="RandomPlayer.h" />
-    <ClInclude Include="Reversi.h" />
+    <ClInclude Include="ReversiTester.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
