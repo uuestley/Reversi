@@ -41,7 +41,7 @@ public:
 		for (int i = 0; i < BOARD_Y; ++i) {
 			for (int j = 0; j < BOARD_X; ++j) {
 				char tempChar;
-				switch () {
+				switch (gameBoard[j]) {
 				case EMPTY:
 					tempChar = '-';
 					break;
@@ -52,7 +52,9 @@ public:
 					tempChar = 'D';
 					break;
 				}
+				cout << tempChar << "\t";
 			}
+			cout << endl;
 		}
 	}
 
