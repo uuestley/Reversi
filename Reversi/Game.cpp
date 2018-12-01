@@ -44,7 +44,8 @@ public:
 	}
 
 	void announceWinner() {
-
+		cout << "End of game!";
+		Board::getWinner();
 	}
 	bool isRunning() {
 

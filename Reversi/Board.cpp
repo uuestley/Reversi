@@ -82,11 +82,11 @@ public:
 	}
 
 	Piece getWinner() const {
-
+		//for(int i = 0; i < BOARD_AREA; ++i)
 	}
 
 	Piece getPlayer() const {
-
+		
 	}
 
 	void genMoves() {
