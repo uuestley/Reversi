@@ -8,7 +8,7 @@ using namespace std;
 class Board {
 public:
 
-	enum Piece {LIGHT, DARK, EMPTY};
+	enum Piece { LIGHT, DARK, EMPTY };
 
 	// Create a board using the defined area
 	Piece gameBoard[BOARD_AREA];
@@ -62,18 +62,22 @@ public:
 
 	bool isLegal(Piece PieceToCheck, Move MoveToCheck) const {
 		if (gameBoard[MoveToCheck] == EMPTY) {
-			if (gameBoard[MoveToCheck - 9] != EMPTY || gameBoard[MoveToCheck - 8] != EMPTY || gameBoard[MoveToCheck - 7] != EMPTY)
-				return true;
-			else if (gameBoard[MoveToCheck - 1] != EMPTY || gameBoard[MoveToCheck + 1] != EMPTY)
-				return true;
-			else if (gameBoard[MoveToCheck + 7] != EMPTY || gameBoard[MoveToCheck + 8] != EMPTY || gameBoard[MoveToCheck + 9] != EMPTY)
-				return true;
-			else
-				return false;
+			if (gameBoard[MoveToCheck - 9] != EMPTY || gameBoard[MoveToCheck - 8] != EMPTY || gameBoard[MoveToCheck - 7] != EMPTY) {
+				if (gameBoard[MoveToCheck - 9] != PieceToCheck || gameBoard[MoveToCheck - 8] != PieceToCheck || gameBoard[MoveToCheck - 7] != PieceToCheck)
+					return true;
+			}
+			else if (gameBoard[MoveToCheck - 1] != EMPTY || gameBoard[MoveToCheck + 1] != EMPTY) {
+				if (gameBoard[MoveToCheck - 1] != PieceToCheck || gameBoard[MoveToCheck + 1] != PieceToCheck)
+					return true;
+			}
+			else if (gameBoard[MoveToCheck + 7] != EMPTY || gameBoard[MoveToCheck + 8] != EMPTY || gameBoard[MoveToCheck + 9] != EMPTY) {
+				if (gameBoard[MoveToCheck + 7] != PieceToCheck || gameBoard[MoveToCheck + 8] != PieceToCheck || gameBoard[MoveToCheck + 9] != PieceToCheck)
+					return true;
+			}
+			return false;
 
 		}
-		else
-			return false;
+		return false;
 	}
 
 	Piece getWinner() const {
