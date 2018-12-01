@@ -82,7 +82,7 @@ public:
 	}
 
 	Piece getWinner() const {
-		//for(int i = 0; i < BOARD_AREA; ++i)
+		
 	}
 
 	Piece getPlayer() const {
@@ -97,7 +97,7 @@ public:
 		int count = 0;
 		for (int i = 0; i < BOARD_AREA; ++i)
 			if (isLegal(gameBoard[i], i))
-				count++;
+				++count;
 		return count;
 	}
 

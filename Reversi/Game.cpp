@@ -59,8 +59,14 @@ public:
 	}
 
 	void announceWinner() {
-		cout << "End of game!";
-		Board::getWinner();
+		cout << "End of game!\s";
+		if (&game->getWinner() == playerOnePiece->getPiece)
+			cout << "Player 1 won!";
+		else if (&game->getWinner() == playerTwoPiece->getPiece)
+			cout << "Player 2 won!";
+		else
+			cout << "Tie!";
+
 	}
 
 	bool isRunning() {
