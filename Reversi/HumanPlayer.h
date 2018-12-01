@@ -1,5 +1,5 @@
-#ifndef HUMAN_PLAYER_HEADER
-#define HUMAN_PLAYER_HEADER
+#ifndef HUMAN_PLAYER_H_
+#define HUMAN_PLAYER_H_
 #include "Player.h"
 
 // A class derived from the class Player

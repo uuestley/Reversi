@@ -1,5 +1,5 @@
-#ifndef PLAYER_HEADER
-#define PLAYER_HEADER
+#ifndef PLAYER_H_
+#define PLAYER_H_
 #include "Piece.h"
 #include "Board.h"
 #include <string>

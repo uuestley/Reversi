@@ -1,5 +1,5 @@
-#ifndef MOVE_HEADER
-#define MOVE_HEADER
+#ifndef MOVE_H_
+#define MOVE_H_
 
 // A type definition of a single unsigned integer which
 // represents the index of the result of the move (where

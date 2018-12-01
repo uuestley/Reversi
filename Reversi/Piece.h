@@ -1,8 +1,9 @@
-#ifndef PIECE_HEADER
-#define PIECE_HEADER
+#ifndef PIECE_H_
+#define PIECE_H_
 
 // The class piece contains an enumerator and a member function
 class Piece {
+public:
 	// An enumerator which represents all possible states of an index on the board
 	enum {LIGHT, DARK, EMPTY};
 
