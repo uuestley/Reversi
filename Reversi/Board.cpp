@@ -57,12 +57,23 @@ public:
 	}
 
 	void makeMove(Piece PieceToMove, Move MoveToMake) {
-
-
+		gameBoard[MoveToMake] = PieceToMove;
 	}
 
 	bool isLegal(Piece PieceToCheck, Move MoveToCheck) const {
+		if (gameBoard[MoveToCheck] == EMPTY) {
+			if (gameBoard[MoveToCheck - 9] != EMPTY || gameBoard[MoveToCheck - 8] != EMPTY || gameBoard[MoveToCheck - 7] != EMPTY)
+				return true;
+			else if (gameBoard[MoveToCheck - 1] != EMPTY || gameBoard[MoveToCheck + 1] != EMPTY)
+				return true;
+			else if (gameBoard[MoveToCheck + 7] != EMPTY || gameBoard[MoveToCheck + 8] != EMPTY || gameBoard[MoveToCheck + 9] != EMPTY)
+				return true;
+			else
+				return false;
 
+		}
+		else
+			return false;
 	}
 
 	Piece getWinner() const {
