@@ -43,7 +43,7 @@ public:
 				char tempChar;
 				switch () {
 				case EMPTY:
-					tempChar = ' ';
+					tempChar = '-';
 					break;
 				case LIGHT:
 					tempChar = 'L';
