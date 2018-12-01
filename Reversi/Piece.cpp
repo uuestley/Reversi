@@ -5,6 +5,5 @@ public:
 	enum {LIGHT, DARK, EMPTY};
 
 	Piece getPiece() const {
-
 	}
 };

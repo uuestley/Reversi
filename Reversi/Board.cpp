@@ -82,7 +82,14 @@ public:
 	}
 
 	Piece getWinner() const {
-		
+		int count = 0;
+		for (int i = 0; i < BOARD_AREA; ++i)
+			if (gameBoard[i] == LIGHT)
+				++count;
+		if (count > 32)
+			return LIGHT;
+		else
+			return DARK;
 	}
 
 	Piece getPlayer() const {

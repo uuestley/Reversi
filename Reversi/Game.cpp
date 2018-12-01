@@ -8,7 +8,6 @@ using namespace std;
 
 class Game {
 public:
-
 	Board* game;
 	Player* playerOne;
 	Piece* playerOnePiece = new Piece();
@@ -49,13 +48,12 @@ public:
 	}
 
 	void play() {
-		/*
+		
 		int temp;
 		while (isRunning) {
 			cin >> temp;
-			Board::makeMove(Piece::LIGHT, temp);
+			game->makeMove(Piece::LIGHT, temp);
 		}
-		*/
 	}
 
 	void announceWinner() {
