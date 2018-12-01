@@ -1,5 +1,5 @@
-#ifndef REVERSI_TESTER_HEADER
-#define REVERSI_TESTER_HEADER
+#ifndef REVERSI_TESTER_H_
+#define REVERSI_TESTER_H_
 #include "Board.h"
 #include "ComputerPlayer.h"
 #include "Game.h"

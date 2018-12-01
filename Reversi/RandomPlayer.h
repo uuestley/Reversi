@@ -1,5 +1,5 @@
-#ifndef RANDOM_PLAYER_HEADER
-#define RANDOM_PLAYER_HEADER
+#ifndef RANDOM_PLAYER_H_
+#define RANDOM_PLAYER_H_
 #include "ComputerPlayer.h"
 
 // Class implements ComputerPlayer base class

@@ -1,5 +1,5 @@
-#ifndef NULL_MOVE_HEADER
-#define NULL_MOVE_HEADER
+#ifndef NULL_MOVE_H_
+#define NULL_MOVE_H_
 #include "Move.h"
 
 // A constant of type Move that represents when a player has no legal moves to play

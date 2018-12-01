@@ -8,7 +8,7 @@ public:
 	string Name;
 	Piece PieceColour;
 
-	Player(const std::string& PlayerName, Piece PlayerPiece) {
+	Player(const string& PlayerName, Piece PlayerPiece) {
 		Name = PlayerName;
 		PieceColour = PlayerPiece;
 	}

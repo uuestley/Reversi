@@ -1,5 +1,5 @@
-#ifndef BOARD_HEADER
-#define BOARD_HEADER
+#ifndef BOARD_H_
+#define BOARD_H_
 #include "Piece.h"
 #include "Move.h"
 

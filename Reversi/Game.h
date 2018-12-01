@@ -1,5 +1,5 @@
-#ifndef GAME_HEADER
-#define GAME_HEADER
+#ifndef GAME_H_
+#define GAME_H_
 #include "Board.h"
 #include "Player.h"
 

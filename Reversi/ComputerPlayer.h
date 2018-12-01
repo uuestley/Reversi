@@ -1,5 +1,5 @@
-#ifndef COMPUTER_PLAYER_HEADER
-#define COMPUTER_PLAYER_HEADER
+#ifndef COMPUTER_PLAYER_H_
+#define COMPUTER_PLAYER_H_
 #include "Piece.h"
 #include "Player.h"
 
