@@ -83,6 +83,117 @@ public:
 			return false;
 		}
 		return false;
+		
+		/*
+		Piece oppositeColour;
+
+		Piece temp = oppositeColour;
+
+		if ( PieceToCheck == LIGHT ) oppositeColour = DARK;
+
+		else oppositeColour = LIGHT;
+
+		if ( gameBoard[MoveToCheck] != EMPTY ) return false;
+
+		//if its left and right: for loop looks in increments of 1 in both directions
+		//for same colour. first must be opposite colour and there cannot be
+		//a empty spot. legal if same coloured piece is reached.
+		for( int i = 1; gameBoard[MoveToCheck-i] != EMPTY; --i ){ // To the left of the piece
+
+			if( i == 1 && gameBoard[MoveToCheck-i] != oppositeColour ) break; //if the first adjacent piece isn't the oposite colour
+
+			if ( gameBoard[MoveToCheck-i] == gameBoard[MoveToCheck] ) return true; //the if statement above hasn't borken the loop 
+				//yet so there is at least one piece of the opposite colour and following a piece of the same colour.
+			
+			if( (MoveToCheck-i) % 8 == 0 ) break; //if the loop reaches the end of the row
+
+		}
+
+		for( int i = 1; gameBoard[MoveToCheck+i] != EMPTY; ++i ){ // To the right of the piece
+
+			if( i == 1 && gameBoard[MoveToCheck+i] != oppositeColour ) break; //if the first adjacent piece isn't the oposite colour
+
+			if ( gameBoard[MoveToCheck+i] == gameBoard[MoveToCheck] ) return true; //the if statement above hasn't borken the loop 
+				//yet so there is at least one piece of the opposite colour and following a piece of the same colour.
+			
+			if( (MoveToCheck+i) % 8 == 0 ) break; //if the loop reaches the end of the row
+
+		}
+
+		//if its up and down: position is >0, <65, is 8 positions
+		//from the other colour piece and in the same direction there
+		//is eventually the same coloured piece without any empty
+		//pieces inbetween. looks for the same coloured piece then stops at one.
+		for( int i = 8; gameBoard[MoveToCheck-i] != EMPTY; i - 8 ){ // Above the piece
+
+			if( i == 8 && gameBoard[MoveToCheck-i] != oppositeColour ) break; //if the first adjacent piece isn't the oposite colour
+
+			if ( gameBoard[MoveToCheck-i] == gameBoard[MoveToCheck] ) return true; //the if statement above hasn't borken the loop 
+				//yet so there is at least one piece of the opposite colour and following a piece of the same colour.
+			
+			if( (MoveToCheck-i) < 1 ) break; //if the loop reaches the end of the column
+
+		}
+
+		for( int i = 8; gameBoard[MoveToCheck+i] != EMPTY; i + 8 ){ // Below the piece
+
+			if( i == 8 && gameBoard[MoveToCheck+i] != oppositeColour ) break; //if the first adjacent piece isn't the oposite colour
+
+			if ( gameBoard[MoveToCheck+i] == gameBoard[MoveToCheck] ) return true; //the if statement above hasn't borken the loop 
+				//yet so there is at least one piece of the opposite colour and following a piece of the same colour.
+			
+			if( (MoveToCheck+i) > 64 ) break; //if the loop reaches the end of the column
+
+		}
+
+		//if its diagonal: uses tactic from above two. when it goes up or down it also increments over in either direction
+		for( int i = 9; gameBoard[MoveToCheck-i] != EMPTY; i - 9 ){ // The left diagonal above the piece
+
+			if( i == 9 && gameBoard[MoveToCheck-i] != oppositeColour ) break; //if the first adjacent piece isn't the oposite colour
+
+			if ( gameBoard[MoveToCheck-i] == gameBoard[MoveToCheck] ) return true; //the if statement above hasn't borken the loop 
+				//yet so there is at least one piece of the opposite colour and following a piece of the same colour.
+			
+			if( (MoveToCheck-i) % 8 == 0 || (MoveToCheck-i) < 1 ) break; //if the loop reaches the end of the row or column
+
+		}
+
+		for( int i = 7; gameBoard[MoveToCheck-i] != EMPTY; i - 7 ){ // The right diagonal above the piece
+
+			if( i == 7 && gameBoard[MoveToCheck-i] != oppositeColour ) break; //if the first adjacent piece isn't the oposite colour
+
+			if ( gameBoard[MoveToCheck-i] == gameBoard[MoveToCheck] ) return true; //the if statement above hasn't borken the loop 
+				//yet so there is at least one piece of the opposite colour and following a piece of the same colour.
+			
+			if( (MoveToCheck-i) % 8 == 0 || (MoveToCheck-i) < 1 ) break; //if the loop reaches the end of the row or column
+
+		}
+
+		for( int i = 7; gameBoard[MoveToCheck+i] != EMPTY; i + 7 ){ // The left diagonal above the piece
+
+			if( i == 7 && gameBoard[MoveToCheck+i] != oppositeColour ) break; //if the first adjacent piece isn't the oposite colour
+
+			if ( gameBoard[MoveToCheck+i] == gameBoard[MoveToCheck] ) return true; //the if statement above hasn't borken the loop 
+				//yet so there is at least one piece of the opposite colour and following a piece of the same colour.
+			
+			if( (MoveToCheck+i) % 8 == 0 || (MoveToCheck+i) > 64 ) break; //if the loop reaches the end of the row or column
+
+		}
+
+		for( int i = 9; gameBoard[MoveToCheck+i] != EMPTY; i + 9 ){ // The left diagonal above the piece
+
+			if( i == 9 && gameBoard[MoveToCheck+i] != oppositeColour ) break; //if the first adjacent piece isn't the oposite colour
+
+			if ( gameBoard[MoveToCheck+i] == gameBoard[MoveToCheck] ) return true; //the if statement above hasn't borken the loop 
+				//yet so there is at least one piece of the opposite colour and following a piece of the same colour.
+			
+			if( (MoveToCheck+i) % 8 == 0 || (MoveToCheck+i) > 64 ) break; //if the loop reaches the end of the row or column
+
+		}
+
+		return false;	
+		*/
+		
 	}
 
 	Piece getWinner() const {
