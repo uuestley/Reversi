@@ -88,8 +88,9 @@ public:
 				++count;
 		if (count > 32)
 			return LIGHT;
-		else
-			return DARK;
+		else if (count < 32)
+			return LIGHT;
+			return EMPTY;
 	}
 
 	Piece getPlayer() const {
