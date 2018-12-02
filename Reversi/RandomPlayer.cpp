@@ -6,6 +6,7 @@ class RandomPlayer : public ComputerPlayer {
 	void makeMove() {
 		float r = static_cast <float> (rand()) / static_cast <float> (64);
 		if (game->isLegal(game, r))
-			gameBoard[r] = piece;
+			gameBoard[r] = piece; 
+
 	}
 };
