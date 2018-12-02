@@ -5,11 +5,10 @@ using namespace std;
 
 class ComputerPlayer : public Player {
 public:
+	char a = 'A';
 	ComputerPlayer(Piece PlayersPiece) {
-		char a = 'A';
-		string currentComp = "Computer" + a;
+		string currentComp = "Computer " + a;
 		a++;
 		Player* currentComp;
-
 	}
 };
