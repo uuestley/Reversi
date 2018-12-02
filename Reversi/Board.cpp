@@ -1,3 +1,7 @@
+/*
+ * Evan Nosich - 0354155
+ * Mouhammed Gningue -
+ */
 #include "Board.h"
 #include "Piece.h"
 #include "Move.h"

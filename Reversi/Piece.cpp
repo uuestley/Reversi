@@ -1,3 +1,7 @@
+/*
+ * Evan Nosich - 0354155
+ * Mouhammed Gningue -
+ */
 #include "Piece.h"
 
 class Piece {

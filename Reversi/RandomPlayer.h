@@ -1,3 +1,7 @@
+/*
+ * Evan Nosich - 0354155
+ * Mouhammed Gningue -
+ */
 #ifndef RANDOM_PLAYER_H_
 #define RANDOM_PLAYER_H_
 #include "ComputerPlayer.h"

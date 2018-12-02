@@ -1,3 +1,7 @@
+/*
+ * Evan Nosich - 0354155
+ * Mouhammed Gningue -
+ */
 #ifndef GAME_H_
 #define GAME_H_
 #include "Board.h"

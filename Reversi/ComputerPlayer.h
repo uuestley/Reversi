@@ -1,3 +1,7 @@
+/*
+ * Evan Nosich - 0354155
+ * Mouhammed Gningue -
+ */
 #ifndef COMPUTER_PLAYER_H_
 #define COMPUTER_PLAYER_H_
 #include "Piece.h"

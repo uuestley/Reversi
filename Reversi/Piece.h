@@ -1,3 +1,7 @@
+/*
+ * Evan Nosich - 0354155
+ * Mouhammed Gningue -
+ */
 #ifndef PIECE_H_
 #define PIECE_H_
 

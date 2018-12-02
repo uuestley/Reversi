@@ -1,3 +1,7 @@
+/*
+ * Evan Nosich - 0354155
+ * Mouhammed Gningue -
+ */
 #ifndef REVERSI_TESTER_H_
 #define REVERSI_TESTER_H_
 #include "Board.h"

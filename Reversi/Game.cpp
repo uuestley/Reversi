@@ -1,3 +1,7 @@
+/*
+ * Evan Nosich - 0354155
+ * Mouhammed Gningue -
+ */
 #include "Game.h"
 #include "Player.h"
 #include "HumanPlayer.h"

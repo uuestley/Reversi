@@ -1,3 +1,7 @@
+/*
+ * Evan Nosich - 0354155
+ * Mouhammed Gningue -
+ */
 #ifndef HUMAN_PLAYER_H_
 #define HUMAN_PLAYER_H_
 #include "Player.h"

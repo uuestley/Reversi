@@ -1,3 +1,7 @@
+/*
+ * Evan Nosich - 0354155
+ * Mouhammed Gningue -
+ */
 #ifndef BOARD_H_
 #define BOARD_H_
 #include "Piece.h"
