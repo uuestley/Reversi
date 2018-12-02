@@ -90,7 +90,6 @@ public:
 			return LIGHT;
 		else if (count < 32)
 			return LIGHT;
-		else
 			return EMPTY;
 	}
 
