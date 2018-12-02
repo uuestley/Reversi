@@ -56,7 +56,6 @@ public:
 	}
 
 	void play() {
-		
 		int temp;
 		while (isRunning) {
 			cin >> temp;
