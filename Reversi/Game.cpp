@@ -43,6 +43,10 @@ public:
 		}
 	}
 
+	Board * returnBoard() {
+		return game;
+	}
+
 	Player* nextPlayer() const {
 
 	}

@@ -9,10 +9,14 @@
 #include "RandomPlayer.h"
 #include "ReversiTester.h"
 
-class ReversiTester {
-	int main() {
-		Game* reversiGame = new Game();
+Game* reversiGame;
+
+int main() {
+		reversiGame = new Game();
 		reversiGame->selectPlayers;
 		reversiGame->play;
-	}
-};
+}
+
+Game* returnGame() {
+	return reversiGame;
+}
